@@ -2,14 +2,14 @@
 
 # أبدأ بسم الله الرحمن الرحيم
 
-<img src="https://raw.githubusercontent.com/nayem-48ai/nayem-48ai/tnx_bd/IMG_20251222_210608.png" width="100%" style="max-height: 250px; object-fit: cover; border-radius: 15px;" alt="Banner" />
+<img src="https://raw.githubusercontent.com/nayem-48ai/nayem-48ai/refs/heads/tnx_bd/IMG_20251222_210608.png?token=GHSAT0AAAAAADR4QE3YRTOZM3TMKY67JT6W2MKEZAA" width="100%" style="max-height: 250px; object-fit: cover; border-radius: 15px;" alt="Banner" />
 
 <br />
 
 <table>
   <tr>
     <td align="center" width="200">
-      <img src="https://raw.githubusercontent.com/nayem-48ai/nayem-48ai/tnx_bd/IMG_20251222_210608.png" width="150" height="150" style="border-radius: 50%; object-fit: cover;" />
+      <img src="https://raw.githubusercontent.com/nayem-48ai/nayem-48ai/refs/heads/tnx_bd/IMG_20251222_210608.png?token=GHSAT0AAAAAADR4QE3YRTOZM3TMKY67JT6W2MKEZAA" width="150" height="150" style="border-radius: 50%; object-fit: cover;" />
       <br />
       <b>Tarikul Islam</b>
     </td>
@@ -50,7 +50,7 @@
 
 <br />
 
-<img src="https://github-readme-stats.vercel.app/api?username=nayem-48ai&show_icons=true&theme=transparent&title_color=58a6ff&text_color=8b949e&icon_color=58a6ff" alt="Stats" />
+<img src="https://github-readme-stats.vercel.app/api?username=nayem-48ai&show_icons=true&theme=transparent&title_color=58a6ff&text_color=8b949e&icon_color=58a6ff" alt="Tnayem48" />
 
 ---
 
