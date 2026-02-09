@@ -2,7 +2,7 @@
 
 # أبدأ بسم الله الرحمن الرحيم
 
-<img src="https://raw.githubusercontent.com/nayem-48ai/nayem-48ai/tnx_bd/IMG_20251222_210608.png" width="100%" style="max-height: 200px; object-fit: cover; border-radius: 12px; border: 2px solid #58a6ff;" alt="Banner" />
+<img src="https://raw.githubusercontent.com/nayem-48ai/nayem-48ai/refs/heads/tnx_bd/IMG_20251222_210608.png?token=GHSAT0AAAAAADR4QE3YRTOZM3TMKY67JT6W2MKEZAA" width="100%" style="max-height: 200px; object-fit: cover; border-radius: 12px; border: 2px solid #58a6ff;" alt="Banner" />
 
 <br /><br />
 
@@ -10,7 +10,7 @@
   <tr>
     <td align="center" width="220">
       <div style="background: linear-gradient(45deg, #58a6ff, #bc8cf2); padding: 4px; border-radius: 50%; display: inline-block;">
-        <img src="https://raw.githubusercontent.com/nayem-48ai/nayem-48ai/tnx_bd/IMG_20251222_210608.png" width="120" height="120" style="border-radius: 50%; border: 3px solid #0d1117; object-fit: cover; display: block;" />
+        <img src="https://raw.githubusercontent.com/nayem-48ai/nayem-48ai/refs/heads/tnx_bd/IMG_20251222_210608.png?token=GHSAT0AAAAAADR4QE3YRTOZM3TMKY67JT6W2MKEZAA" width="120" height="120" style="border-radius: 50%; border: 3px solid #0d1117; object-fit: cover; display: block;" />
       </div>
       <br />
       <b style="font-size: 18px;">Tarikul Islam</b>
@@ -52,7 +52,7 @@
 
 <br />
 
-<img src="https://github-readme-stats.vercel.app/api?username=nayem-48ai&show_icons=true&theme=dark&title_color=58a6ff&icon_color=58a6ff&text_color=ffffff&bg_color=0d1117" alt="GitHub Stats" />
+<img src="https://raw.githubusercontent.com/nayem-48ai/nayem-48ai/refs/heads/tnx_bd/IMG_20251222_210608.png?token=GHSAT0AAAAAADR4QE3YRTOZM3TMKY67JT6W2MKEZAA" alt="GitHub Stats" />
 
 ---
 
