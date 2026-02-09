@@ -4,8 +4,6 @@
 
 <b style="font-size: 80px;">TNxBD</b>
 
-<br /><br />
-
 <table>
   <tr>
     <td align="center" width="220">
