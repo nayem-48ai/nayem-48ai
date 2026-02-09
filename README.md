@@ -9,7 +9,7 @@
 <table>
   <tr>
     <td align="center" width="300">
-      <img src="YOUR_IMAGE_DIRECT_LINK_HERE" width="180" style="border-radius: 50%;" />
+      <img src="https://raw.githubusercontent.com/nayem-48ai/nayem-48ai/refs/heads/tnx_bd/IMG_20251222_210608.png?token=GHSAT0AAAAAADR4QE3YRTOZM3TMKY67JT6W2MKEZAA" width="180" style="border-radius: 50%;" />
       <br />
       <b>Tarikul Islam</b>
     </td>
@@ -29,14 +29,14 @@
 > [!TIP]
 > **Step 1:** Go to your Repo **Settings**.  
 > **Step 2:** Click **Pages** on the left sidebar.  
-> **Step 3:** Select `main` branch and `/root` folder.  
+> **Step 3:** Select `tnx_bd` branch and `/root` folder.  
 > **Step 4:** Hit **Save** and wait for your URL!
 
 ---
 
 ### 🌐 My Digital Presence
 <p align="center">
-<a href="https://github.com/Tnayem48"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a>
+<a href="https://github.com/nayem-48ai"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a>
 <a href="https://facebook.com/Tnayem48"><img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white"></a>
 <a href="https://linkedin.com/in/Tnayem48"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a>
 </p>
