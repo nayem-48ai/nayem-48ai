@@ -2,18 +2,18 @@
 
 # أبدأ بسم الله الرحمن الرحيم
 
-<img src="https://raw.githubusercontent.com/nayem-48ai/nayem-48ai/refs/heads/tnx_bd/IMG_20251222_210608.png?token=GHSAT0AAAAAADR4QE3YRTOZM3TMKY67JT6W2MKEZAA" style="type= soft; color= auto; height= 200px; section= header; text= Tarikul%20Islam; fontSize= 70px; animation= fadeIn; width= 50%; " />
+<img src="https://raw.githubusercontent.com/nayem-48ai/nayem-48ai/tnx_bd/IMG_20251222_210608.png" width="100%" style="max-height: 250px; object-fit: cover; border-radius: 15px;" alt="Banner" />
 
 <br />
 
 <table>
   <tr>
-    <td align="center" width="300">
-      <img src="https://raw.githubusercontent.com/nayem-48ai/nayem-48ai/refs/heads/tnx_bd/IMG_20251222_210608.png?token=GHSAT0AAAAAADR4QE3YRTOZM3TMKY67JT6W2MKEZAA" width="180" style="border-radius: 50%;" />
+    <td align="center" width="200">
+      <img src="https://raw.githubusercontent.com/nayem-48ai/nayem-48ai/tnx_bd/IMG_20251222_210608.png" width="150" height="150" style="border-radius: 50%; object-fit: cover;" />
       <br />
       <b>Tarikul Islam</b>
     </td>
-    <td width="600">
+    <td width="400">
       <h3> ⚡ About Me </h3>
       Hello! I'm <b>Tarikul</b>. A passionate developer focused on building modern and functional web applications. I love clean UI and efficient code.
       <br /><br />
@@ -50,7 +50,7 @@
 
 <br />
 
-<img src="https://raw.githubusercontent.com/nayem-48ai/nayem-48ai/refs/heads/tnx_bd/IMG_20251222_210608.png?token=GHSAT0AAAAAADR4QE3YRTOZM3TMKY67JT6W2MKEZAA" style="show_icons= true; theme= transparent; title_color= 58a6ff; text_color= 8b949e; icon_color= 58a6ff" alt="Stats" />
+<img src="https://github-readme-stats.vercel.app/api?username=nayem-48ai&show_icons=true&theme=transparent&title_color=58a6ff&text_color=8b949e&icon_color=58a6ff" alt="Stats" />
 
 ---
 
