@@ -1,59 +1,34 @@
-name: Pro Repository Cleanup
+name: Create Clean Branch
 
 on:
   push:
     branches:
-      - main
-  workflow_dispatch:
+      - main  # যখনই মেইন ব্রাঞ্চে পুশ করবেন এটি কাজ শুরু করবে
 
 jobs:
-  cleanup:
+  build:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
-
     steps:
-      - name: Checkout code
+      - name: Checkout Code
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
 
-      - name: Delete Files and Folders (Main Branch)
-        run: |
-          echo "Cleaning up files..."
-          
-          # যেসব ফাইল বা ফোল্ডার বাদ দিতে চান তাদের নাম এখানে লিখুন (পাইপ | দিয়ে আলাদা করুন)
-          # ডিফল্টভাবে .github, .git এবং . বাদ রাখা হয়েছে
-          SAFE_FILES=".github|.git|."
-          
-          # লুপ চালিয়ে ফাইল চেক করা এবং ডিলিট করা
-          for item in $(ls -A); do
-            if [[ ! "$item" =~ ^($SAFE_FILES)$ ]]; then
-              rm -rf "$item"
-            fi
-          done
-
-          echo "File cleanup finished!"
-
-      - name: Delete Remote Branches
-        run: |
-          echo "Cleaning up branches..."
-          
-          # যেসব ব্রাঞ্চ ডিলিট করতে চান না তাদের নাম এখানে লিখুন (পাইপ | দিয়ে আলাদা করুন)
-          SAFE_BRANCHES="main" 
-
-          # রিমোট ব্রাঞ্চগুলো চেক করে ডিলিট করা
-          git branch -r | grep -vE "$SAFE_BRANCHES" | sed 's/origin\///' | xargs -I {} git push origin --delete {} || echo "No extra branches to delete."
-
-      - name: Save and Push Changes
+      - name: Setup Git Configuration
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Create Clean Orphan Branch
+        run: |
+          # tnx_bd নামে নতুন অনাথ (orphan) ব্রাঞ্চ তৈরি
+          git checkout --orphan tnx_bd
           
-          git add -A
-          if git diff --quiet && git diff --staged --quiet; then
-            echo "No changes to commit."
-          else
-            git commit -m "chore: automated deep cleanup"
-            git push origin main
-          fi
+          # সব ফাইল ডিলিট করা
+          git rm -rf .
+          
+          # একটি নতুন ব্ল্যাঙ্ক ফাইল তৈরি (ব্রাঞ্চ সেভ রাখার জন্য জরুরি)
+          echo "# Clean Branch: tnx_bd" > README.md
+          
+          # ফাইল অ্যাড এবং পুশ করা
+          git add README.md
+          git commit -m "Created a clean empty branch named tnx_bd"
+          git push origin tnx_bd --force
