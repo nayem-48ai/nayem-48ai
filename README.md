@@ -2,7 +2,7 @@
 
 # أبدأ بسم الله الرحمن الرحيم
 
-<img src="https://raw.githubusercontent.com/nayem-48ai/nayem-48ai/refs/heads/tnx_bd/IMG_20251222_210608.png?token=GHSAT0AAAAAADR4QE3YRTOZM3TMKY67JT6W2MKEZAA type=soft&color=auto&height=200&section=header&text=Tarikul%20Islam&fontSize=70&animation=fadeIn" width="100%" />
+<img src="https://raw.githubusercontent.com/nayem-48ai/nayem-48ai/refs/heads/tnx_bd/IMG_20251222_210608.png?token=GHSAT0AAAAAADR4QE3YRTOZM3TMKY67JT6W2MKEZAA" style="type=soft; color=auto; height=200; section=header; text=Tarikul%20Islam; fontSize=70; animation=fadeIn; width=100%; " />
 
 <br />
 
