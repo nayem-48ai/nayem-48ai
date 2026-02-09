@@ -40,7 +40,7 @@ jobs:
           echo "Cleaning up branches..."
           
           # যেসব ব্রাঞ্চ ডিলিট করতে চান না তাদের নাম এখানে লিখুন (পাইপ | দিয়ে আলাদা করুন)
-          SAFE_BRANCHES="main|workflow_data" 
+          SAFE_BRANCHES="main" 
 
           # রিমোট ব্রাঞ্চগুলো চেক করে ডিলিট করা
           git branch -r | grep -vE "$SAFE_BRANCHES" | sed 's/origin\///' | xargs -I {} git push origin --delete {} || echo "No extra branches to delete."
