@@ -2,7 +2,7 @@
 
 # أبدأ بسم الله الرحمن الرحيم
 
-<img src="https://raw.githubusercontent.com/nayem-48ai/nayem-48ai/refs/heads/tnx_bd/IMG_20251222_210608.png?token=GHSAT0AAAAAADR4QE3YRTOZM3TMKY67JT6W2MKEZAA" width="100%" style="max-height: 200px; object-fit: cover; border-radius: 12px; border: 2px solid #58a6ff;" alt="Banner" />
+<b style="font-size: 80px;">TNxBD</b>
 
 <br /><br />
 
