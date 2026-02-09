@@ -1,34 +1,36 @@
-name: Create Clean Branch
+name: Create Clean Branch tnx_bd
 
 on:
   push:
     branches:
-      - main  # যখনই মেইন ব্রাঞ্চে পুশ করবেন এটি কাজ শুরু করবে
+      - main
+  workflow_dispatch:
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
     steps:
-      - name: Checkout Code
+      - name: Checkout main branch
         uses: actions/checkout@v4
 
-      - name: Setup Git Configuration
+      - name: Create Clean Folder
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          mkdir deploy_folder
+          # আপনার রিকুয়েস্ট অনুযায়ী একটি ফাইল তৈরি করা হচ্ছে
+          echo "This is a cleaned branch named tnx_bd" > deploy_folder/info.txt
+          # আপনি চাইলে এখানে আপনার README ফাইলটিও ডাউনলোড করে রাখতে পারেন
+          curl -L https://raw.githubusercontent.com/nayem-48ai/subDomTop/refs/heads/main/.github/workflows/preview -o deploy_folder/README.md
 
-      - name: Create Clean Orphan Branch
-        run: |
-          # tnx_bd নামে নতুন অনাথ (orphan) ব্রাঞ্চ তৈরি
-          git checkout --orphan tnx_bd
-          
-          # সব ফাইল ডিলিট করা
-          git rm -rf .
-          
-          # একটি নতুন ব্ল্যাঙ্ক ফাইল তৈরি (ব্রাঞ্চ সেভ রাখার জন্য জরুরি)
-          echo "# Clean Branch: tnx_bd" > README.md
-          
-          # ফাইল অ্যাড এবং পুশ করা
-          git add README.md
-          git commit -m "Created a clean empty branch named tnx_bd"
-          git push origin tnx_bd --force
+      - name: Deploy to tnx_bd Branch
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./deploy_folder
+          publish_branch: tnx_bd
+          force_orphan: true # এটিই মেইন ব্রাঞ্চের ডাটা রিমুভ করবে
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
+          commit_message: "Created clean tnx_bd branch with info.txt"
