@@ -50,7 +50,7 @@
 
 <br />
 
-<img src="https://github.com/nayem-48ai/nayem-48ai/blob/tnx_bd/Main_img.png" alt="GitHub Stats" />
+<img src="https://github.com/nayem-48ai/nayem-48ai/blob/tnx_bd/res/thanks.gif" alt="thanks" />
 
 ---
 
