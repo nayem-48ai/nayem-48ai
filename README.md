@@ -2,8 +2,7 @@
 
 # أبدأ بسم الله الرحمن الرحيم
 
-<b style="font-size: 80px;">TNxBD</b>
-
+<img src="https://github.com/nayem-48ai/nayem-48ai/blob/tnx_bd/res/welcome.gif" width="120" height="120" style="border-radius: 50%; border: 3px solid #0d1117; object-fit: cover; display: block;" />
 <table>
   <tr>
     <td align="center" width="220">
