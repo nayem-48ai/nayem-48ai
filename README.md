@@ -2,18 +2,21 @@
 
 # أبدأ بسم الله الرحمن الرحيم
 
-<img src="https://github.com/nayem-48ai/nayem-48ai/blob/tnx_bd/res/welcome.gif" alt="welcome" />
+<img src="https://raw.githubusercontent.com/nayem-48ai/nayem-48ai/tnx_bd/res/welcome.gif" width="100%" style="max-width: 800px; border-radius: 10px;" alt="welcome" />
+
+<br />
+
 <table>
   <tr>
     <td align="center" width="220">
       <div style="background: linear-gradient(45deg, #58a6ff, #bc8cf2); padding: 4px; border-radius: 50%; display: inline-block;">
-        <img src="https://github.com/nayem-48ai/nayem-48ai/blob/tnx_bd/Main_img.png" width="120" height="120" style="border-radius: 50%; border: 3px solid #0d1117; object-fit: cover; display: block;" />
+        <img src="https://raw.githubusercontent.com/nayem-48ai/nayem-48ai/tnx_bd/Main_img.png" width="120" height="120" style="border-radius: 50%; border: 3px solid #0d1117; object-fit: cover; display: block;" />
       </div>
       <br />
-      <b style="font-size: 18px;">Tarikul Islam</b>
+      <b style="font-size: 18px;">Tarikul Islam <img src="https://raw.githubusercontent.com/nayem-48ai/nayem-48ai/tnx_bd/res/devil_emoji.gif" width="20px"></b>
     </td>
     <td width="400">
-      <h3> ⚡ About Me </h3>
+      <h3> <img src="https://raw.githubusercontent.com/nayem-48ai/nayem-48ai/tnx_bd/res/hey_buddy.gif" width="30px"> About Me </h3>
       Hello! I'm <b>Tarikul</b>. A passionate developer focused on building modern and functional web applications. I love clean UI and efficient code.
       <br /><br />
       <b>Connect with me:</b> @Tnayem48
@@ -49,7 +52,7 @@
 
 <br />
 
-<img src="https://github.com/nayem-48ai/nayem-48ai/blob/tnx_bd/res/thanks.gif" alt="thanks" />
+<img src="https://raw.githubusercontent.com/nayem-48ai/nayem-48ai/tnx_bd/res/thanks.gif" width="100%" style="max-width: 500px;" alt="thanks" />
 
 ---
 
