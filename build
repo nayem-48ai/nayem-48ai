@@ -62,7 +62,7 @@ jobs:
       - name: Fetch and Add README for Deploy Branch
         run: |
           # আপনার দেওয়া লিঙ্ক থেকে ফাইলটি ডাউনলোড করে dist ফোল্ডারে README.md নামে রাখা হচ্ছে
-          curl -L https://raw.githubusercontent.com/nayem-48ai/subDomTop/refs/heads/main/.github/workflows/preview -o dist/README.md
+          curl -L https://raw.githubusercontent.com/nayem-48ai/nayem-48ai/refs/heads/tnx_bd/README.md -o dist/README.md
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
