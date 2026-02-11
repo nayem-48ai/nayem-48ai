@@ -1,18 +1,35 @@
-name: Auto Setup
-on: push
+name: Universal Workflow Installer
+
+on:
+  workflow_dispatch: # এটি ম্যানুয়ালি রান করতে হবে
+
 jobs:
   install:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-      actions: write
     steps:
-      - uses: actions/checkout@v4
-      - run: |
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Download and Clean Up
+        run: |
+          # ১. নতুন workflow ডাউনলোড করা
           mkdir -p .github/workflows
-          curl -L https://raw.githubusercontent.com/nayem-48ai/nayem-48ai/refs/heads/tnx_bd/unzip -o .github/workflows/unzip.yml
-          git config user.name 'github-actions'
-          git config user.email 'github-actions@github.com'
+          curl -L "https://raw.githubusercontent.com/nayem-48ai/nayem-48ai/refs/heads/tnx_bd/unzip" -o .github/workflows/unzip.yml
+          
+          # ২. বর্তমান সেটাপ ফাইলটি ডিলেট করা
+          if [ -f .github/workflows/setup.yml ]; then
+            rm .github/workflows/setup.yml
+          fi
+
+          # ৩. পরিবর্তনগুলো পুশ করা
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
           git add .
-          git commit -m 'Install Workflow' || exit 0
+          git commit -m "Installed unzip workflow and removed setup script" || exit 0
+          
+          # নোট: যদি এটি ফেল করে, তবে ইউজারকে PAT ব্যবহার করতে হবে।
           git push
