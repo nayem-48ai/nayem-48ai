@@ -30,7 +30,7 @@
 ---
 
 ### 🚀 Quick Deployment Guide (GitHub Pages)
-
+---
 > [!TIP]
 > **Step 1:** Go to your Repo **Settings**.  
 > **Step 2:** Click **Pages** on the left sidebar.  
@@ -39,31 +39,60 @@
 
 ---
 
-### 🌐 My Digital Presence
+## 🌐 Custom Domain Pointing Guide
+If you want to use your own domain with GitHub Pages, follow these DNS configurations.
+
+---
+
+### 1️⃣ Method A: Using A Records (For Apex Domains)
+*Point your root domain (e.g., `example.com`) by adding these IP addresses in your DNS provider.*
+
+| Type | Name (Host) | Value (IP Address) |
+| :--- | :--- | :--- |
+| `A` | `@` | `185.199.108.153` |
+| `A` | `@` | `185.199.109.153` |
+| `A` | `@` | `185.199.110.153` |
+| `A` | `@` | `185.199.111.153` |
+
+**Copy IPs quickly:**
+```text
+185.199.108.153
+185.199.109.153
+185.199.110.153
+185.199.111.153
+```
+---
+
+## 2️⃣ Method B: Using CNAME (For Subdomains)
+Ideal for `www.example.com` or `blog.example.com`.
+Record Type: `CNAME`
+Name: `www` (or your subdomain)
+Target Value:
+`USERNAME.github.io`
+| Type | Name (Host) | Value (IP Address) |
+| :--- | :--- | :--- |
+| `CNAME` | `www` `(or your subdomain)` | `USERNAME.github.io` |
+---
+# [!IMPORTANT]
+After setting DNS, don't forget to add your domain name in the Custom Domain field under GitHub Pages settings and click Save.
+
+---
+🌐 My Digital Presence
 <p align="center">
 <a href="https://github.com/nayem-48ai"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a>
 <a href="https://facebook.com/Tnayem48"><img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white"></a>
 <a href="https://linkedin.com/in/Tnayem48"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a>
 </p>
-
----
-
-### 🛠 Tech Stack & Tools
+🛠 Tech Stack & Tools
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=html,css,js,python,git,linux,vscode,pycharm&theme=dark" />
+<img src="https://skillicons.dev/icons?i=html,css,js,python,git,linux,vscode,pycharm&theme=dark" />
 </p>
-
 <br />
-
 <img src="https://raw.githubusercontent.com/nayem-48ai/nayem-48ai/tnx_bd/res/thanks.gif" width="100%" style="max-width: 400px;" alt="thanks" />
-
----
-
 <p align="center">
-  <font color="#8b949e"> 
-    © 2026 <b>Tarikul Islam</b> | <i>@Tnayem48</i> <br />
-    Made with ❤️ in Termux
-  </font>
+<font color="#8b949e">
+© 2026 <b>Tarikul Islam</b> | <i>@Tnayem48</i> <br />
+Made with ❤️ in Termux
+</font>
 </p>
-
 </div>
