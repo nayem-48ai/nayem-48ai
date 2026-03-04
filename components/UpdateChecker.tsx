@@ -3,6 +3,8 @@ import appMetadata from '../assets/app-metadata.json';
 
 const UpdateChecker: React.FC = () => {
     const [updateData, setUpdateData] = useState<any>(null);
+    
+    // সরাসরি মেটাডেটা ফাইল থেকে ডাইনামিক ভ্যালু নিচ্ছে
     const CURRENT_VERSION_CODE = appMetadata.versionCode;
     const UPDATE_JSON_URL = appMetadata.updateJsonUrl;
 
