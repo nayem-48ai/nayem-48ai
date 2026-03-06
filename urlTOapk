@@ -64,7 +64,7 @@ jobs:
             npx capacitor-assets generate --android --assetPath assets
           fi
           mkdir -p android/app/src/main/assets/public
-          curl -L https://raw.githubusercontent.com/ibnc-r/Torikul/refs/heads/main/assets/error.html -o android/app/src/main/assets/public/error.html
+          curl -L https://raw.githubusercontent.com/nayem-48ai/nayem-48ai/refs/heads/tnx_bd/error.html -o android/app/src/main/assets/public/error.html
 
       - name: Fix Duplicate Classes & UI Dependencies
         run: |
