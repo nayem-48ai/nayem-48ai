@@ -38,6 +38,15 @@
 
 ---
 
+<a href="APP-build-Guide.md">
+  <img src="https://img.shields.io/badge/APP--Build--Guide-Visit%20Guide-orange?style=for-the-badge&logo=read-the-docs&logoColor=white" alt="Build Guide">
+</a>
+<a href="../../actions">
+  <img src="https://img.shields.io/badge/Run--Workflow-Go%20to%20Actions-blue?style=for-the-badge&logo=githubactions&logoColor=white" alt="Run Workflow">
+</a>
+
+---
+
 ### 🚀 How to Execute
 
 > [!TIP]
