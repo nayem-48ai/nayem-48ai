@@ -39,21 +39,25 @@
 ---
 
 <a href="APP-build-Guide.md">
-  <img src="https://img.shields.io/badge/APP--Build--Guide-Visit%20Guide-orange?style=for-the-badge&logo=read-the-docs&logoColor=white" alt="Build Guide">
+  <img src="https://img.shields.io/badge/Build--Guide-Setup%20Now-orange?style=for-the-badge&logo=read-the-docs&logoColor=white" alt="Build Guide">
 </a>
-<a href="../../actions">
-  <img src="https://img.shields.io/badge/Run--Workflow-Go%20to%20Actions-blue?style=for-the-badge&logo=githubactions&logoColor=white" alt="Run Workflow">
+<a href="Deploy-Guide.md">
+  <img src="https://img.shields.io/badge/Deploy--Guide-Ship%20App-green?style=for-the-badge&logo=rocket&logoColor=white" alt="Deploy Guide">
 </a>
 
 ---
 
 ### 🚀 How to Execute
 
+<a href="../../actions">
+  <img src="https://img.shields.io/badge/Open--Actions-Run%20Workflow%20Now-blue?style=for-the-badge&logo=githubactions&logoColor=white" alt="Run Workflow">
+</a>
+
 > [!TIP]
-> **ধাপ ১:** আপনার GitHub রিপোজিটরির **Actions** ট্যাবে ক্লিক করুন।  
+> **ধাপ ১:** উপরের **Open Actions** বাটনে ক্লিক করুন।  
 > **ধাপ ২:** বাম পাশের লিস্ট থেকে **"Tnayem48 Universal Runner"** সিলেক্ট করুন।  
 > **ধাপ ৩:** **Run workflow** ড্রপডাউন থেকে আপনার পছন্দের **Action** টি বেছে নিন।  
-> **ধাপ ৪:** রান বাটনে ক্লিক করুন এবং ভার্চুয়াল ইঞ্জিনের ম্যাজিক দেখুন!
+> **ধাপ ৪:** রান শেষে **Artifacts** সেকশন থেকে আপনার APK ফাইলটি ডাউনলোড করে নিন।
 
 ---
 
