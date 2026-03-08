@@ -57,10 +57,7 @@
 > **ধাপ ৩:** **Run workflow** ড্রপডাউন থেকে আপনার পছন্দের **Action** টি বেছে নিন।  
 > **ধাপ ৪:** রান শেষে **Artifacts** সেকশন থেকে আপনার APK ফাইলটি ডাউনলোড করে নিন।
 
-[!IMPORTANT]
-> যদি আপনি এই রিপোজিটরি **Fork** করে থাকেন, তবে অবশ্যই প্রথমে আপনার রিপোজিটরির **Actions** ট্যাবে গিয়ে **"Enable Actions"** বাটনে ক্লিক করতে হবে। নাহলে বাটনটি কাজ করবে না।">
-
- <a href="../../actions/">
+<a href="../../actions/">
  <img src="https://img.shields.io/badge/Open--Actions-Run%20Workflow%20Now-blue?style=for-the-badge&logo=githubactions&logoColor=white" alt="Run Workflow">
 </a>
 
