@@ -71,7 +71,7 @@
 <p align="center">
   <font color="#8b949e"> 
     © 2026 <b>Tarikul Islam</b> | <i>Universal Runner v2.0</i> <br />
-    Powered by GitHub Actions & Termux
+    Powered by GitHub Actions
   </font>
 </p>
 
