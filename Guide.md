@@ -39,10 +39,10 @@
 ---
 
 <a href="APP-build-Guide.md">
-  <img src="https://img.shields.io/badge/Build--Guide-Setup%20Now-orange?style=for-the-badge&logo=read-the-docs&logoColor=white" alt="Build Guide">
+  <img src="https://img.shields.io/badge/Build--Guide-APK%20Generate-orange?style=for-the-badge&logo=read-the-docs&logoColor=white" alt="Build Guide">
 </a>
 <a href="Deploy-Guide.md">
-  <img src="https://img.shields.io/badge/Deploy--Guide-Ship%20App-green?style=for-the-badge&logo=rocket&logoColor=white" alt="Deploy Guide">
+  <img src="https://img.shields.io/badge/Deploy--Guide-Build%20Website-green?style=for-the-badge&logo=rocket&logoColor=white" alt="Deploy Guide">
 </a>
 
 ---
