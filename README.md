@@ -72,11 +72,18 @@ Target Value:
 | Type | Name (Host) | Value (IP Address) |
 | :--- | :--- | :--- |
 | `CNAME` | `www` `(or your subdomain)` | `USERNAME.github.io` |
+
 ---
-# [!IMPORTANT]
+
+### Important 💬
+
+</div>
+
+> [!TIP]
 After setting DNS, don't forget to add your domain name in the Custom Domain field under GitHub Pages settings and click Save.
 
 ---
+
 🌐 My Digital Presence
 <p align="center">
 <a href="https://github.com/nayem-48ai"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a>
