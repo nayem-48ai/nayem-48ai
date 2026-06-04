@@ -1,3 +1,5 @@
+# ! প্রথমেই একটি workflow তৈরি করতে হবে যার ডিরেক্টরি হবে এরকম .github/workflows/ আপনি সরাসরি নাম এর জায়গায় এটি ( .github/workflows/universal-runner.yml ) বসালেও হবে ।
+# এটি আপনার কোনোই data sniff করে না । কেবল ব্যক্তিগত ব্যবহারের তৈরি। 
 name: Tnayem48 Universal Runner
 
 on:
